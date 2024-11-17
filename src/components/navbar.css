@@ -1,0 +1,70 @@
+/* Basic Navbar styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--navbar-bg, #fff); /* Default light mode */
+    color: var(--text-color, #333); /* Default text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hide the checkbox */
+#inp {
+    display: none;
+}
+
+/* Toggle switch styling */
+.toggle {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #eedfdf;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Circle inside the toggle */
+.toggle::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    transition: transform 0.3s;
+}
+
+/* When checkbox is checked (dark mode) */
+#inp:checked + .toggle {
+    background-color: #3e8e41; /* Dark mode toggle color */
+}
+
+#inp:checked + .toggle::before {
+    transform: translateX(25px); /* Move the circle to the right */
+}
+
+/* For light and dark modes */
+body.dark nav {
+    background-color: #333; /* Dark mode background */
+    color: #f9f9f9; /* Dark mode text color */
+}
+
+body.dark .toggle {
+    background-color: #444; /* Dark mode toggle */
+}
