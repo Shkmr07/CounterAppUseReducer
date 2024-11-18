@@ -1,5 +1,7 @@
-import { useState } from 'react'
-import { Context } from './components/context'
+import {useState } from 'react'
+import { Context } from './components/Context'
+import Navbar from './components/Navbar'
+import CounterLogic from './components/CounterLogic'
 
 import './App.css'
 
@@ -8,7 +10,8 @@ function App() {
 
   return (
     <Context>
-      
+      <Navbar />
+      <CounterLogic />
     </Context>
   )
 }

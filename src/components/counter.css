@@ -1,0 +1,50 @@
+.counterLogic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Increased gap for better spacing */
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 300px; /* Restrict width for better layout */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .counterLogic div:first-child {
+    width: 60px; /* Increased size for better visibility */
+    height: 60px;
+   /* Changed to a primary color */
+    border-radius: 50%; /* Added circular styling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Increased font size for clarity */
+    font-weight: bold;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .counterLogic div:last-child {
+    display: flex;
+    gap: 10px; /* Use gap for spacing instead of margin-left */
+  }
+  
+  .counterLogic button {
+    padding: 8px 12px; /* Adjusted padding for better button size */
+    font-size: 1rem; /* Consistent button font size */
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .counterLogic button:hover {
+    transform: scale(1.05); /* Subtle scaling effect */
+  }
+  
+  .counterLogic button:active {
+    transform: scale(1); /* Reset scaling */
+  }
+  

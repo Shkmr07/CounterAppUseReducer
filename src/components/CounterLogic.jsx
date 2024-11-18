@@ -1,8 +1,19 @@
-import React from 'react'
+import { ThemeAndCounterContext } from "./Context"
+import { useContext } from "react"
+import './counter.css'
 
 function CounterLogic() {
+
+  const {themeAndcounter,dispatch} = useContext(ThemeAndCounterContext)
+
   return (
-    <div>CounterLogic</div>
+    <div className="counterLogic">
+      <div><p>{themeAndcounter.counter}</p></div>
+      <div>
+        <button onClick={()=>dispatch({type:'increment'})}>Increment</button>
+        <button onClick={()=>dispatch({type:'decrement'})}>Decrement</button>
+      </div>
+    </div>
   )
 }
 

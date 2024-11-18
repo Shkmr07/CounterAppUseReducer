@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --nav-bg: #FBF4DB;
+    --nav-color: black;
+    --counter-background: #fff;
+    --counter-color: #333;
+    --button-bg: #007bff;
+    --button-color: #fff;
+    --toggle-bg:#eedfdf;
+    --toggleBefore-bg:white;
+    --input-bg: #3e8e41;
+    --counter-bg: #f8f8f8;
+    --counterFirst-border: #007bff;
+    --counterFirst-bg: #fff;
+    --counterFirst-color: #333;
+    --counterBtn-bg:#007bff;
+    --counterBtn-color: #fff;
+    --body-bg: white;
+}
+
+body.dark{
+    --nav-bg: #333;
+    --nav-color: white;
+    --counter-background: #333;
+    --counter-color: #fff;
+    --button-bg: rgb(34, 162, 34);
+    --button-color: #fff;
+    --toggleBefore-bg: white;
+    --input-bg: blue;
+    --body-bg: #EBEAFF;
+    --counter-bg: #f8f8f8;
+    --counterFirst-border: rgb(15, 175, 15);
+    --counterFirst-bg: #fff;
+    --counterFirst-color: #333;
+    --counterBtn-bg:rgb(15, 175, 15);
+    --counterBtn-color: #fff;
+}
+
+
+.counterLogic div:first-child{
+    background-color: var(--counter-background);
+    color: var(--counter-color);
+}
+
+.counterLogic button{
+    background-color: var(--button-bg);
+    color: var(--button-color);
+}
+
+nav{
+    background-color: var(--nav-bg);
+    color: var(--nav-color)
+}
+
+.toggle{
+    background-color: var(--toggle-bg);
+}
+
+.toggle::before{
+    background-color: var(--toggleBefore-bg);
+}
+
+#inp:checked + .toggle {
+    background-color: var(--input-bg);
+}
+
+.counterLogic{
+    background-color: var(--counter-bg) ;
+}
+
+
+.counterLogic div:first-child{
+    border: 2px solid var(--counterFirst-border);
+    color: var(--counterFirst-color);
+    background-color: var(--counterFirst-bg);
+    
+}
+
+body{
+    background-color: var(--body-bg);
+}
+
+
+
+.counterLogic button{
+    background-color: var(--counterBtn-bg);
+    color: var(--counterBtn-color);
+}
+
+
+
+.counterLogic button:hover {
+    background-color: var(--counterBtn-bg); /* Darker shade on hover */
+  }
+  
+  .counterLogic button:active {
+    background-color: var(--counterBtn-bg);/* Even darker shade on active */
+    
+  }
